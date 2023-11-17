@@ -172,6 +172,15 @@
             {
                 Console.Write(item);
             }
+
+            //Задание 4.3.13
+            var arr2 = new int[] { 5, 6, 9, 1, 2, 3, 4 };
+            int sum = 0;
+            foreach (var item in arr2)
+            {
+                sum += item;
+            }
+            Console.WriteLine(sum);
         }
     }
     
