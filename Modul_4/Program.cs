@@ -133,6 +133,13 @@
                 t++;
             } while (t < 3);
 
+            //Задание 4.3.7
+            string name = "Ilya";
+            for (int i = name.Length-1; i >= 0; i--)
+            {
+                Console.Write(name[i]);
+            }
+
         }
     }
     
