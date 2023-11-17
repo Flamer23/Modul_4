@@ -21,7 +21,18 @@
             var result = !inv;
             Console.WriteLine(result);
 
-            
+            //Задание 4.1.12
+            var a = 6;
+            var b = 7;
+
+            if (a != b)
+            {
+                Console.WriteLine("Условие истинно");
+            }
+            else
+            {
+                Console.WriteLine("Условие ложно");
+            }
 
         }
     }
