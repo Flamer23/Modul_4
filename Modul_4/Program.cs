@@ -15,6 +15,15 @@
             double X = 0.0;
             double Y = 1.0;
             bool CC = (AA < BB) | (X > Y);
+
+            //Задание 4.1.10
+            var inv = true;
+            var result = !inv;
+            Console.WriteLine(result);
+
+            
+
         }
     }
+    
 }
