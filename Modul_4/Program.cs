@@ -210,6 +210,19 @@
                 if (array3[i]>0) { sum++; }
             }
             Console.WriteLine(sum);
+
+
+            //Задание 4.3.16
+            int[,] arr4 = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
+            sum = 0;
+            foreach(var item in arr4)
+            {
+                if (item > 0)
+                {
+                    sum++;
+                }
+            }
+            Console.WriteLine(sum);
         }
     }
     
