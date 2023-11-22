@@ -134,10 +134,10 @@
             } while (t < 3);
 
             //Задание 4.3.7
-            string name = "Ilya";
-            for (int i = name.Length - 1; i >= 0; i--)
+            string name2 = "Ilya";
+            for (int i = name2.Length - 1; i >= 0; i--)
             {
-                Console.Write(name[i]);
+                Console.Write(name2[i]);
             }
 
 
@@ -245,6 +245,7 @@
 
             //Задание 4.4.2
             (string name, int age) anketa;
+            
 
             Console.Write("Введите имя: ");
             anketa.name = Console.ReadLine();
@@ -253,6 +254,33 @@
 
             Console.WriteLine("Ваше имя: {0}", anketa.name);
             Console.WriteLine("Ваш возраст: {0}", anketa.age);
+
+            //Задание 4.4.3
+            var (name, age) = ("Евгения", 27);
+
+            Console.WriteLine("Моё имя: {0}", name);
+            Console.WriteLine("Мой возраст: {0}", age);
+
+            Console.Write("Введите имя: ");
+            name = Console.ReadLine();
+            Console.Write("Введите возраст с цифрами:");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Ваше имя: {0}", name);
+            Console.WriteLine("Ваш возраст: {0}", age);
+
+            //Задание 4.4.5
+            (string Name, string Type, double Age, int NameCount) Pet;
+
+            Console.WriteLine("Введите имя питомца");
+            Pet.Name = Console.ReadLine();
+            Pet.NameCount = Pet.Name.Length;
+
+            Console.WriteLine("Введите вид питомца");
+            Pet.Type = Console.ReadLine();
+
+            Console.WriteLine("Введите возрас питомца");
+            Pet.Age = double.Parse(Console.ReadLine());
         }
     }
     
