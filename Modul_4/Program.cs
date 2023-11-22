@@ -223,6 +223,25 @@
                 }
             }
             Console.WriteLine(sum);
+
+            //Задание 4.3.17
+            int[,] arr5 = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
+
+            for(int i =0; arr4.GetUpperBound(0) > 0; i++)
+            {
+                for(int j = 0; arr4.GetUpperBound(1)>0;j++ )
+                {
+                    for(int k = j+1; k<arr4.GetUpperBound(1); k++)
+                    {
+                        if (arr4[i, j] > arr4[i,k])                         
+                        {
+                            sum = arr4[i, k];
+                            arr4[i,k] = arr4[i,j];
+                            arr4[i, j] = sum;
+                        }
+                    }
+                }
+            }
         }
     }
     
