@@ -181,6 +181,21 @@
                 sum += item;
             }
             Console.WriteLine(sum);
+
+            //Задание 4.3.14
+            int[][] array2 = new int[3][];
+
+            array2[0] = new int[2] { 1, 2 };
+            array2[1] = new int[3] { 1, 2, 3 };
+            array2[2] = new int[5] { 1, 2, 3, 4, 5 };
+
+            foreach (var num in array2)
+            {
+                foreach (var item in num)
+                {
+                    Console.Write(item + " ");
+                }
+            }
         }
     }
     
