@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             //Задание 4.1.4
-            string A = "abc" ;
+            string A = "abc";
             string B = "123";
             bool C = A != B;
 
@@ -135,7 +135,7 @@
 
             //Задание 4.3.7
             string name = "Ilya";
-            for (int i = name.Length-1; i >= 0; i--)
+            for (int i = name.Length - 1; i >= 0; i--)
             {
                 Console.Write(name[i]);
             }
@@ -196,6 +196,20 @@
                     Console.Write(item + " ");
                 }
             }
+
+            //Задание 4.3.15
+            int[] array3 = new int[10];
+            Random random = new Random();
+            sum = 0;
+            for (int i = 0; i < array3.Length; i++)
+            {
+                array3[i] = random.Next(-100, 100);
+            }
+            for (int i = 0; i < array3.Length; i++)
+            {
+                if (array3[i]>0) { sum++; }
+            }
+            Console.WriteLine(sum);
         }
     }
     
